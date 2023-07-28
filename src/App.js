@@ -12,7 +12,7 @@ function App() {
     const checkLogin = async () => {
       const token = localStorage.getItem('tokenStore')
       if (token) {
-        const verified = await axios.get('https://notes-lime-iota.vercel.app/user/verify', {
+        const verified = await axios.get('https://priyadharshini-notes-app.vercel.app/user/verify', {
           headers: { Authorization: token }
         })
         setIsLogin(verified.data)

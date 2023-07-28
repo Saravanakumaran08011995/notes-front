@@ -19,7 +19,7 @@ function EditNote() {
     const getNote = async () => {
       const token = localStorage.getItem('tokenStore');
       if (id) {
-        const res = await axios.get(`https://notes-lime-iota.vercel.app/api/notes/${id}`, {
+        const res = await axios.get(`https://priyadharshini-notes-app.vercel.app/api/notes/${id}`, {
           headers: { Authorization: token }
         });
         setNote({
@@ -51,7 +51,7 @@ function EditNote() {
           date
         };
 
-        await axios.put(`https://notes-lime-iota.vercel.app/api/notes/${id}`, newNote, {
+        await axios.put(`https://priyadharshini-notes-app.vercel.app/api/notes/${id}`, newNote, {
           headers: { Authorization: token }
         });
 

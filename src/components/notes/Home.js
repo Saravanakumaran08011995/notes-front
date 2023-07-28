@@ -11,7 +11,7 @@ function Home() {
 
     const getNotes = async (token) => {
         console.log(token)
-        const res = await axios.get('https://notes-lime-iota.vercel.app/api/notes', {
+        const res = await axios.get('https://priyadharshini-notes-app.vercel.app/api/notes', {
             headers: { Authorization: token }
         })
         console.log(res)
@@ -32,7 +32,7 @@ function Home() {
 const deleteNote = async(id)=>{
     try {
         if(token){
-            await axios.delete(`https://notes-lime-iota.vercel.app/api/notes/${id}`,{
+            await axios.delete(`https://priyadharshini-notes-app.vercel.app/api/notes/${id}`,{
                 headers:{Authorization:token}
             })
             getNotes(token)

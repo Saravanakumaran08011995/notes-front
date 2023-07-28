@@ -29,7 +29,7 @@ function CreateNotes() {
           date,
         };
 
-        await axios.post('https://notes-lime-iota.vercel.app/api/notes', newNote, {
+        await axios.post('https://priyadharshini-notes-app.vercel.app/api/notes', newNote, {
           headers: { Authorization: token },
         });
 
